@@ -1,0 +1,119 @@
+:root {
+  --primary: rgb(35, 97, 156);
+  --secondary: rgb(136, 37, 118);
+}
+body {
+  height: 100dvh;
+  background: linear-gradient(var(--primary), gray);
+}
+
+.box {
+  margin-top: 150px;
+  background-color: rgba(174, 174, 174, 0.267);
+  border-radius: 15px;
+  position: relative;
+}
+.player {
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+.player h2 {
+  text-transform: uppercase;
+}
+.player h3 {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: white;
+}
+.current {
+  background-color: var(--secondary);
+  background-color: var(--primary);
+  color: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 150px;
+  margin: 0 auto;
+}
+.chosenPlayer {
+  background-color: rgb(150, 183, 213);
+  /* in case its game */
+}
+.btn,
+#Dice {
+  background-color: white;
+  width: fit-content;
+  font-weight: 500;
+  position: absolute;
+  border-radius: 5px;
+}
+.btn:hover {
+  /* border: 1px solid var(--secondary); */
+  background-color: rgb(171, 171, 171);
+  color: white;
+  width: fit-content;
+}
+#newGame {
+  transform: translate(-50%, 0);
+  top: 10%;
+  left: 50%;
+}
+#Dice {
+  transform: translate(-50%, 0);
+  top: 30%;
+  left: 50%;
+  font-size: 2rem;
+  color: var(--primary);
+}
+/* #Dice i {
+  font-size: 2rem;
+} */
+#rollDice {
+  transform: translate(-50%, 0);
+  bottom: 30%;
+  left: 50%;
+}
+#Hold {
+  transform: translate(-50%, 0);
+  bottom: 10%;
+  left: 50%;
+}
+
+#winner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(128, 128, 128, 0.935);
+  width: 300px;
+  height: 300px;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+  transform: 3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#winner h3 {
+  color: aliceblue;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3rem;
+}
+#winner i {
+  color: aliceblue;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+@media (max-width: 575.98px) {
+  /* styles for screens smaller than 576px */
+  #newGame {
+    position: fixed;
+  }
+  .current {
+    width: 100px;
+  }
+}

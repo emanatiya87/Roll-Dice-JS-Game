@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <div class="row box">
+          <div class="col-6 player" id="player1">
+            <h2>Player 1</h2>
+            <h3 id="totalScore1">0</h3>
+            <div class="current">
+              <h4>Current</h4>
+              <h5 id="currentScore1">0</h5>
+            </div>
+          </div>
+          <div class="col-6 player" id="player2">
+            <h2>Player 2</h2>
+            <h3 id="totalScore2">0</h3>
+            <div class="current">
+              <h4>Current</h4>
+              <h5 id="currentScore2">0</h5>
+            </div>
+          </div>
+          <button id="newGame" class="btn">New Game!</button>
+          <button id="rollDice" class="btn">Roll Dice</button>
+          <button id="Hold" class="btn">Hold</button>
+          <div id="Dice"><i class="fa-solid fa-dice-one"></i></div>
+        </div>
+      </div>
+      <div id="winner">
+        <h3 id="whoWin">Winner</h3>
+
+        <i class="fa-solid fa-rotate-right" id="reload"></i>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
