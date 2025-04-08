@@ -5,6 +5,7 @@
 body {
   height: 100dvh;
   background: linear-gradient(var(--primary), gray);
+  overflow: hidden;
 }
 
 .box {
